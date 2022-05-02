@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "621093546809",
+    "project_id": "exploria-4d91f",
+    "storage_bucket": "exploria-4d91f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621093546809:android:9d8e8170f483c9e5b1d6e8",
+        "android_client_info": {
+          "package_name": "com.kharigo.exploria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "621093546809-28tagf8b7artrluaar4rocnv4vvqghm9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kharigo.exploria",
+            "certificate_hash": "421cd7d3603ecc86cc0272f38900ec8ad13f82e9"
+          }
+        },
+        {
+          "client_id": "621093546809-ml3qeosmpcffhqass7s4e6btltm52v0v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdbPU9H9LfpODUDjb4VxN5qJ3DZqi2emQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "621093546809-ml3qeosmpcffhqass7s4e6btltm52v0v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
