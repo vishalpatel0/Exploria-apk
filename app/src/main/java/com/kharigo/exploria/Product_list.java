@@ -1,4 +1,4 @@
-package com.kharigo.exploria.home;
+package com.kharigo.exploria;
 
 public class Product_list {
     private String id;

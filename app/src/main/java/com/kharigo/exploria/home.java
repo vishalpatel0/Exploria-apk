@@ -1,5 +1,6 @@
-package com.kharigo.exploria.home;
+package com.kharigo.exploria;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -18,11 +19,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.kharigo.exploria.MainActivity;
-import com.kharigo.exploria.R;
-import com.kharigo.exploria.map;
-import com.kharigo.exploria.profile_save.profile;
-import com.kharigo.exploria.user;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -37,8 +33,9 @@ public class home extends AppCompatActivity {
     GridLayoutManager manager;
     Product_list_adepter a;
     private List<Product_list> Product_list;
-    ImageButton BTN_Profile,BTN_Map,BTN_camera;
+    ImageButton BTN_Profile,BTN_Map,BTN_camera,ot;
     private static final int TAKE_PICTURE = 1;
+
     private Uri imageUri;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,8 +77,6 @@ public class home extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
-
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         manager = new GridLayoutManager(home.this, 1);
@@ -90,6 +85,13 @@ public class home extends AppCompatActivity {
         a = new Product_list_adepter(home.this, Product_list);
         recyclerView.setAdapter(a);
         live();
+//        ot = findViewById(R.id.ot);
+//        ot.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//            }
+//        });
 
     }
 
@@ -155,8 +157,8 @@ public class home extends AppCompatActivity {
         Volley.newRequestQueue(this).add(stringRequest);
 
     }
-
-
-
+public static void a(Context c){
+    final user user=new user(c);user.x();
+}
 
 }

@@ -14,18 +14,12 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.kharigo.exploria.home.User;
-import com.kharigo.exploria.home.home;
-
-import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
     ImageView imageView;
@@ -172,7 +166,7 @@ ET_pass.setText("123");
     }
 
     public void writeNewUser(String userId, String name, String email) {
-        User user = new User(name, email);
+//        User user = new User(name, email);
 
         mDatabase = FirebaseDatabase.getInstance("https://exploria-4d91f-default-rtdb.firebaseio.com/").getReference();
 //

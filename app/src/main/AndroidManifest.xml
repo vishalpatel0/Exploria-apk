@@ -32,8 +32,8 @@
             android:value="@string/maps_api_key" />
 
         <activity android:name=".map" />
-        <activity android:name=".profile_save.profile" />
-        <activity android:name=".home.home" />
+        <activity android:name=".profile" />
+        <activity android:name=".home" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

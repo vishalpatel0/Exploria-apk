@@ -1,4 +1,4 @@
-package com.kharigo.exploria.profile_save;
+package com.kharigo.exploria;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -16,10 +16,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
-import com.kharigo.exploria.R;
-import com.kharigo.exploria.home.Product_list;
-import com.kharigo.exploria.home.Product_list_adepter;
-import com.kharigo.exploria.home.home;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -27,6 +23,8 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.kharigo.exploria.home.a;
 
 public class profile extends AppCompatActivity {
 ImageButton BTN_Back;   profadepter a;
@@ -56,7 +54,15 @@ ImageButton BTN_Back;   profadepter a;
         Glide.with(this)
                 .load("https://www.seekpng.com/png/detail/174-1741541_man-face-logo-men-face-logo-design.png\n")
                 .into(f);live();
+                ImageView imageView3 = findViewById(R.id.imageView3);
+        imageView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               a(getApplicationContext()); finishAffinity();
+            }
+        });
     }
+
     private void  live() {
         String url = "https://www.kharigo.com/job/home.php";
         final StringRequest stringRequest = new StringRequest(Request.Method.GET, url,

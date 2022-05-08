@@ -9,7 +9,6 @@ import android.widget.EditText;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.kharigo.exploria.home.User;
 
 public class ca extends AppCompatActivity {
     EditText editTextTextPersonName3,editTextTextPersonName4,editTextTextPersonName5;
@@ -30,7 +29,7 @@ public class ca extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new MainActivity().writeNewUser(editTextTextPersonName4.getText().toString(),editTextTextPersonName3.getText().toString(),editTextTextPersonName5.getText().toString()); finish();
+           //     new MainActivity().writeNewUser(editTextTextPersonName4.getText().toString(),editTextTextPersonName3.getText().toString(),editTextTextPersonName5.getText().toString()); finish();
 
             }
         });

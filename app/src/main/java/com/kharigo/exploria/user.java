@@ -15,7 +15,7 @@ public class user {
     private String email;
     private String info;
 
-    public void remove() {
+    public void x() {
         sharedPreferences.edit().clear().commit();
     }
 
