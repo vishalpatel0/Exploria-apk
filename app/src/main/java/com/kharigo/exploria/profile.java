@@ -51,9 +51,7 @@ ImageButton BTN_Back;   profadepter a;
         Product_list = new ArrayList<>();
         a = new profadepter(profile.this, Product_list);
         recyclerView.setAdapter(a);
-        Glide.with(this)
-                .load("https://www.seekpng.com/png/detail/174-1741541_man-face-logo-men-face-logo-design.png\n")
-                .into(f);live();
+        live();
                 ImageView imageView3 = findViewById(R.id.imageView3);
         imageView3.setOnClickListener(new View.OnClickListener() {
             @Override

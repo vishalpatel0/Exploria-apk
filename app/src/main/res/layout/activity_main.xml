@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,12 +12,13 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
         android:fontFamily="@font/aladin"
         android:foregroundGravity="center"
         android:gravity="center"
         android:letterSpacing="0.4"
         android:text="Exploria"
-        android:textColor="#6934FF"
+        android:textColor="#000000"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,17 +28,24 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="336dp"
+        android:background="@drawable/b1"
+        android:foregroundGravity="center"
+        android:gravity="center"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0">
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="176dp"
+            android:layout_width="347dp"
+            android:layout_height="112dp"
             android:rotationY="25"
             app:srcCompat="@drawable/a" />
+
 
         <EditText
             android:id="@+id/editTextPhone"
@@ -46,6 +54,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="32dp"
+            android:background="@drawable/b2"
             android:ems="10"
             android:hint="Mobile No"
             android:inputType="phone"
@@ -53,14 +62,13 @@
             android:textColor="@color/black"
             android:textColorHint="@color/black" />
 
-
         <EditText
             android:id="@+id/TV_pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="20dp"
             android:layout_marginEnd="32dp"
+            android:background="@drawable/b2"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
@@ -70,32 +78,32 @@
 
         <Button
             android:id="@+id/BTN_login"
-            android:layout_width="match_parent"
+            android:layout_width="263dp"
             android:layout_height="match_parent"
             android:layout_marginStart="32dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
 
-            android:background="@drawable/btn_style"
+            android:background="@drawable/btn_style_3"
+            android:foregroundGravity="center"
+            android:gravity="center"
             android:text="Login"
             android:textAllCaps="false"
-            android:textColor="@color/purple_700"
+            android:textColor="@color/black"
             android:textColorHighlight="@color/design_default_color_error"
             android:textColorLink="@color/purple_200"
             android:textSize="24sp" />
-    </LinearLayout>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="177dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="23dp"
-        android:background="@drawable/btn_style_2"
-        android:text="Create Account"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="177dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/btn_style_3"
+            android:text="Create Account"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

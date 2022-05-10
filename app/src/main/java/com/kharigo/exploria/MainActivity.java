@@ -64,9 +64,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-ET_mobile.setText("123");
+ET_mobile.setText("9175366310");
 
-ET_pass.setText("123");
+ET_pass.setText("123456");
 
 
 
@@ -77,9 +77,8 @@ ET_pass.setText("123");
                 String p =  ET_pass.getText().toString();
                     String userId = String.valueOf(ET_mobile);
 
-                if (m.equals("123") || m.equals("111") ){
-                    Toast.makeText(getApplicationContext(),"done",Toast.LENGTH_SHORT).show();
-                    Log.i("tost","tost");
+                if (m.equals("9175366310") || m.equals("8668230531") ){
+                    Toast.makeText(getApplicationContext(),"Login",Toast.LENGTH_SHORT).show();
                     user user = new user(MainActivity.this);
                     user.set_log(m,p,"vishal","hello vishal");
                     Intent i = new Intent(getApplicationContext(), home.class);

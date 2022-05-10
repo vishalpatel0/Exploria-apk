@@ -52,8 +52,8 @@ public class map extends AppCompatActivity implements OnMapReadyCallback {
     Marker My_addMarker;
     String data="";
     TextView Note;
-    int height = 300;
-    int width = 280;
+    int height = 400;
+    int width = 380;
     int AD_height = 350;
     int AD_width = 400;
     @Override
@@ -154,14 +154,14 @@ public class map extends AppCompatActivity implements OnMapReadyCallback {
     private void add_shop(){
 //Log.i("data",data);
 
-        String x = "20.0034551";
-        String y = "73.7761669";
-        String area = "30";
-        String name = "K.T.H.M. College";
+        String x = "20.013323";
+        String y = "73.821255";
+        String area = "80";
+        String name = "K K Wagh College";
 
         final LatLng shop = new LatLng(Double.parseDouble(x),Double.parseDouble(y));
 
-        BitmapDrawable bitmapdraw = (BitmapDrawable)getResources().getDrawable(R.drawable.kt);
+        BitmapDrawable bitmapdraw = (BitmapDrawable)getResources().getDrawable(R.drawable.kk);
         Bitmap b = bitmapdraw.getBitmap();
         Bitmap smallMarker = Bitmap.createScaledBitmap(b, AD_width, AD_height, false);
         map.addMarker(new MarkerOptions()
@@ -179,20 +179,20 @@ public class map extends AppCompatActivity implements OnMapReadyCallback {
         add_shop1();
 
         map.moveCamera(CameraUpdateFactory.newLatLng(shop));
-        map.animateCamera(CameraUpdateFactory.newLatLngZoom(shop, 20));
+        map.animateCamera(CameraUpdateFactory.newLatLngZoom(shop, 18));
     }
     private void add_shop1(){
 //Log.i("data",data);
 
 
-        String x = "20.0035010";
-        String y = "73.7762010";
+        String x = "20.014834";
+        String y = "73.821688";
         String area = "2";
-        String name = "Dilprit";
+        String name = "Swarup";
 
         final LatLng shop = new LatLng(Double.parseDouble(x),Double.parseDouble(y));
 
-        BitmapDrawable bitmapdraw = (BitmapDrawable)getResources().getDrawable(R.drawable.f1);
+        BitmapDrawable bitmapdraw = (BitmapDrawable)getResources().getDrawable(R.drawable.b);
         Bitmap b = bitmapdraw.getBitmap();
         Bitmap smallMarker = Bitmap.createScaledBitmap(b, width, height, false);
         map.addMarker(new MarkerOptions()
@@ -216,15 +216,15 @@ public class map extends AppCompatActivity implements OnMapReadyCallback {
 //Log.i("data",data);
 
 
-        String x = "20.0034130";
-        String y = "73.7761130";
+        String x = "20.012617";
+        String y = "73.821953";
 
-        String area = "2";
-        String name = "vishal";
+        String area = "5";
+        String name = "Om zade";
 
         final LatLng shop = new LatLng(Double.parseDouble(x),Double.parseDouble(y));
 
-        BitmapDrawable bitmapdraw = (BitmapDrawable)getResources().getDrawable(R.drawable.f22);
+        BitmapDrawable bitmapdraw = (BitmapDrawable)getResources().getDrawable(R.drawable.c);
         Bitmap b = bitmapdraw.getBitmap();
         Bitmap smallMarker = Bitmap.createScaledBitmap(b, width, height, false);
         map.addMarker(new MarkerOptions()
@@ -248,14 +248,14 @@ public class map extends AppCompatActivity implements OnMapReadyCallback {
 
 
 
-        String x = "20.0032010";
-        String y = "73.7761010";
-        String area = "10";
-        String name = "Neha";
+        String x = "20.014264";
+        String y = "73.821544";
+        String area = "6";
+        String name = "";
 
         final LatLng shop = new LatLng(Double.parseDouble(x),Double.parseDouble(y));
 
-        BitmapDrawable bitmapdraw = (BitmapDrawable)getResources().getDrawable(R.drawable.f3);
+        BitmapDrawable bitmapdraw = (BitmapDrawable)getResources().getDrawable(R.drawable.d);
       //  BitmapDescriptor icon = BitmapDescriptorFactory.fromResource(R.drawable.user);
         Bitmap b = bitmapdraw.getBitmap();
         Bitmap smallMarker = Bitmap.createScaledBitmap(b, width, height, false);

@@ -11,8 +11,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg">
+        android:layout_height="59dp"
+        android:background="@drawable/b1">
 
         <TextView
             android:id="@+id/textView2"
@@ -24,7 +24,7 @@
             android:fontFamily="@font/aladin"
             android:letterSpacing="0.2"
             android:text="Exploria"
-            android:textColor="#00009C"
+            android:textColor="#000000"
             android:textSize="30sp"
             app:layout_constraintStart_toEndOf="@+id/BTN_Profile"
             app:layout_constraintTop_toTopOf="parent" />
@@ -33,10 +33,12 @@
             android:id="@+id/BTN_camera"
             android:layout_width="40dp"
             android:layout_height="39dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:background="@android:drawable/ic_menu_camera"
-            android:backgroundTint="@color/purple_500"
+            android:backgroundTint="#000000"
+            android:foregroundTint="#000000"
+            android:tint="#000000"
             app:layout_constraintEnd_toStartOf="@+id/BTN_Map"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -44,10 +46,11 @@
             android:id="@+id/BTN_Profile"
             android:layout_width="36dp"
             android:layout_height="37dp"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="40dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/user"
-            android:backgroundTint="#0027FF"
+            android:backgroundTint="#000000"
+            android:foregroundTint="#000000"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -55,9 +58,10 @@
             android:id="@+id/BTN_Map"
             android:layout_width="43dp"
             android:layout_height="42dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="44dp"
             android:layout_weight="1"
-            android:backgroundTint="#724300FF"
+            android:backgroundTint="#000000"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@android:drawable/ic_dialog_map" />
